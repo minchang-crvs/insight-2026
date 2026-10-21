@@ -19,6 +19,8 @@
   html,body{margin:0;background:#0e1320}
   main{max-width:960px;margin:0 auto}
   picture,img{display:block;width:100%;height:auto}
+  /* 오시는 길 하단 여백: 타임테이블 배경 남색(#0e1320) */
+  .location{background:#0e1320;padding-bottom:clamp(48px,10vw,96px)}
   .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 </style>
 </head>
@@ -34,7 +36,7 @@
   </picture>
 
   <!-- 행사장 오시는 길 -->
-  <section aria-label="행사장 오시는 길">
+  <section class="location" aria-label="행사장 오시는 길">
     <picture>
       <source srcset="assets/location.webp" type="image/webp">
       <img src="assets/location.png" width="1672" height="941" loading="lazy"
